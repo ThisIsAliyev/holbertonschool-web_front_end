@@ -1,0 +1,7 @@
+/* My style */
+@use '_11-list-names-file' as c;
+
+@each $name in c.$list-names {
+    .photo-#{$name} {
+        background: image-url("photos/#{$name}.jpg") no-repeat; }
+}
